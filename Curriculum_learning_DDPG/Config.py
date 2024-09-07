@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-env_name = 'H2017'
+env_name = 'Ned2'
 
 
 #agent or model

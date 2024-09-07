@@ -21,7 +21,7 @@ class Ned2_control(object):
         # Initialize a Robot Group
         self.robot = RobotCommander()
         self.scene = PlanningSceneInterface()
-        self.move_group = MoveGroupCommander("ned2")
+        self.move_group = MoveGroupCommander("h2017")
         rospy.sleep(2)  # Wait for the Scene to fully load
         self.target = []
         self.Is_valid = True
