@@ -102,7 +102,7 @@ class DDPG:
                 break
 
 if __name__ == "__main__":
-    wandb.init(project='H2017_DDPG')
+    wandb.init(project='Ned2_DDPG')
     wandb.run.name = 'DDPG'
     wandb.run.save()
     ddpg = DDPG()

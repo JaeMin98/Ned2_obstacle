@@ -168,7 +168,7 @@ def Run_Training():
 if __name__ == '__main__':
 
     for i in range(3):
-        wandb.init(project='H2017')
+        wandb.init(project='Ned2_SAC')
         wandb.run.name = f'SAC_Robotic_Arm_{round(1.0-Config.Current_Data_Selection_Ratio,1)}_weight_{Config.action_weight}'
         wandb.run.save()
 
