@@ -159,7 +159,7 @@ class RobotArmControl:
         elif(11.25 > angle_difference >= 0): R_theta = 0.6
 
         # R(dinstance)
-        df = 1.5
+        df = 1.0
         if(distance >= df): R_distance = 0.0
         elif(df > distance >= df*0.7): R_distance = 0.01
         elif(df*0.7 > distance >= df*0.5): R_distance = 0.05
@@ -188,7 +188,7 @@ class RobotArmControl:
     def step(self, angle):
         distance = self.calc_distance(self.target, self.get_endeffector_position())
 
-        df = 1.5
+        df = 1.0
         if(distance >= df): self.weight = 10
         elif(df > distance >= df*0.7): self.weight = 5
         elif(df*0.7 > distance >= df*0.5): self.weight = 3
